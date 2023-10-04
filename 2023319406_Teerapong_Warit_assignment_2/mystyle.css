@@ -12,6 +12,26 @@ body {
             [footer-left]"nav footer" 30px [footer-right]
             / 120px 1fr;
 }
+.card_spec{
+    display:grid;
+    grid-template-columns: 640px 640px;
+    grid-template-rows: 280px ;
+    grid-gap: 5em;
+    padding-top: 120px;
+    padding-left: 60px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+.card_menu{
+    display:grid;
+    grid-template-columns:500px 500px 500px;
+    grid-template-rows: 150px ;
+    padding-top: 120px;
+    padding-left: 20px;
+    position: absolute;
+    
+}
 h1,h2,h4,p{
     font-family: Arial;
 }
@@ -114,7 +134,7 @@ nav a {
 }
 .article_text{
     font-size: 25px;
-    padding-bottom: 20%;
+    padding-bottom: 14%;
 }
 #chef_pic{
     width: 60%;
@@ -123,7 +143,82 @@ nav a {
 }
 
 /* special offer */
-
+.spec_offer{
+    padding-top: 20px;
+    text-align: center;
+    transform: relative;
+    z-index: 2;
+    display: grid;
+}
+.bg_spec_off{
+    width : 100%;
+    text-align: center;
+    z-index: 2;
+}
+.spec_off_text{
+    position:absolute;
+    color: rgb(226, 226, 226);
+    z-index: 2;
+    font-size:50px ;
+    left : 40%;
+}
+.stu_set{
+    background: rgb(216, 215, 215);
+}
+.chef_gril{
+    background: rgb(216, 215, 215);
+}
+.pic{
+    text-align: center;
+    height: 75%;
+    width: 75%;
+    padding-top: 20%;
+    padding-left: 20%;
+}
+.spec_off_table{ /* use with teble in special menu*/
+    width: 50%;
+}
+.spec_off_table h1{
+    font-size: 36px;
+    text-align: left;
+    padding-left:8%;
+    top:20%;
+}
+.deltxt{
+    color: red;
+}
+.price{
+    color: rgb(36, 158, 36);
+}
 /* special menu */
+.spec_menu{
+    width : 100%;
+    text-align: center;
+    z-index: 2;
+}
+.spec_menu_text{
+    position:absolute;
+    color: rgb(64, 64, 64);
+    z-index: 2;
+    font-size:50px ;
+    left : 45%;
+}
+.steak{
 
+}
+.xfish{
+
+}
+.soup{
+
+}
+.spec_menu_table{
+
+}
+.spec_off_table p{
+    font-size: 28px;
+    text-align: left;
+    padding-left:8%;
+    top:20%;
+}
 /* contact us */
