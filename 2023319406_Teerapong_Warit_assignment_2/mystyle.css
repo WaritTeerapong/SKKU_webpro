@@ -8,8 +8,8 @@ body {
     height: 100%;
     grid-template: 
             [header-left]"header header" 75px[header-right]
-            [main-left]"nav main" 300rem[main-right]
-            [footer-left]"nav footer" 30px [footer-right]
+            [main-left]"nav main" 189rem [main-right]
+            [footer-left]"nav footer" 50px [footer-right]
             / 120px 1fr;
 }
 .card_spec{
@@ -30,7 +30,14 @@ body {
     padding-top: 120px;
     padding-left: 20px;
     position: absolute;
-    
+}
+.contact_grid{
+    display:grid;
+    grid-template-columns:80px 500px 500px;
+    grid-template-rows: 80px 80px 100px 20px ;
+    padding-top: 160px;
+    padding-left: 50px;
+    position: absolute;
 }
 h1,h2,h4,p{
     font-family: Arial;
@@ -66,7 +73,7 @@ nav{
     background-color:rgb(61, 61, 61);
     margin-top: 0px;
     padding-top: 50px;
-    width: 200px;
+    width: 250px;
     z-index: 1;
 }
 nav a {
@@ -81,7 +88,7 @@ nav a {
 /* =============== main ===============*/
 .main{
     grid-area: main;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 /* welcome order */
 .welcome_order{
@@ -190,35 +197,69 @@ nav a {
 .price{
     color: rgb(36, 158, 36);
 }
+
 /* special menu */
 .spec_menu{
     width : 100%;
     text-align: center;
     z-index: 2;
+    position:relative;
 }
 .spec_menu_text{
     position:absolute;
     color: rgb(64, 64, 64);
     z-index: 2;
     font-size:50px ;
-    left : 45%;
-}
-.steak{
-
-}
-.xfish{
-
-}
-.soup{
-
-}
-.spec_menu_table{
-
+    left : 37%;
 }
 .spec_off_table p{
-    font-size: 28px;
+    font-size: 26px;
     text-align: left;
-    padding-left:8%;
+    padding-left:4%;
+    padding-top:15%;
     top:20%;
 }
+
 /* contact us */
+footer{
+    margin-top: 450px;
+    text-align: center;
+    transform: relative;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 608px
+}
+.contact_text{
+    position:absolute;
+    color: rgb(226, 226, 226);
+    font-size:50px;
+    left : 45%;
+} 
+.title{
+    color: rgb(226, 226, 226);
+    font-size:24px;
+    padding-bottom : 100%;
+    text-align: left;
+}
+.title_box{
+    text-align: right;
+}
+.title_box a{
+    display: block;
+    color: rgb(61, 61, 61);
+    background-color:rgb(211, 211, 211);
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    border-style:solid;
+    border-radius: 15px;
+    border-width:5px;
+    width : 30%;
+    margin-left: 69%;
+    margin-top: 8%;
+
+    height: 50px
+
+
+}
+
