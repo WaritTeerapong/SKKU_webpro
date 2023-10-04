@@ -5,177 +5,81 @@
     <meta charset="utf-8">
     <title>SKKU Restaurant</title>
 
-     <!-- add icon link -->
-     <link rel = "icon" href = "assets/icon.png" 
-             type = "image/x-icon">
-    <style>
-
-      table{
-        border-style: none;
-      }
-      td.special_menu{
-        text-align: center;
-        width: 30%;
-      }
-      footer{
-        text-align: center;
-      }
-      h2{
-        text-align: center;
-      }
-      h4{
-        text-align: center;
-      }
-      article{
-        text-align: center;
-      }
-      img.special_menu{
-        width:65%
-      }
-      </style>
-
+    <!-- link with css file -->
+    <link rel = "stylesheet" href="mystyle.css">
   </head>
 
-  <header>
-    <!--navigator part-->
-    <nav>
-      <table style="width:100% ; height: 100px">
-        <tr>
-
-          <td style="width:230px"></td>
-          
-          <td style="width:40px">
-            <center><h4><a href='#'> HOME </a></h4></center>
-          </td>
-          <td style="width:35px">
-            <center><h4><a href='#'> ABOUT US </a></h4></center>
-          </td>
-          <td style="width: 35px">
-            <center><h4><a href='#'> GALLERY </a></h4></center>
-          </td>
-          <td style="width:30px">
-            <center><h4><a href='#'> CONTACT US </a></h4></center>
-          </td>
-
-          <td style="width:230px"></td>
-
-        </tr>
-      </table>
-    </nav>
-  </header>
-
-  <body>
-
-    <!--big steak picture part-->
-    <div style = "background-size:100% 100%; 
-                background-image: url('assets/bg_main.png');
-                background-repeat: no-repeat ">
-        
-      
-        <h2 style = "color: rgb(235, 229, 229);
-                      padding-top: 25%;
-                      padding-bottom: 25%; 
-                      padding-left: 25%; 
-                      padding-right: 25%;">
-        SKKU RESTAURANT
-        </h2>
-     </div>
-
-     <!-- 3 lines -->
-     <table style="height: 50px"></table>
-     <hr>
-     <hr>
-     <hr>
-     <table style="height: 50px"></table>
-
-     <!--- section with chef pic-->
-     <section style="text-align:center">
-        <h2> Welcome to SKKU RESTAURANT </h2>
-        <img src = "assets/chef_img.png" alt ="chef"
-             width="18%" >
-        
-        <h4>
-          Over the next twelve months we will features, successively, four menus - or 'volumes'
-          - each of which presents some of SKKU's unique dishes and the thinking behind them. 
-          By walking in SKKU footsteps, you will discover yourself the story of the restaurant,
-          with all its ground-breaking originality, experimentation and innovation.
-        </h4>
-
-        <!--- Big hamburger pic-->
-        <img src = "assets/bg_offer.png"; alt = "bg_offer"; width=100%>
-        </div>
-      </section>
-
-     <!-- 3 lines -->
-     <table style="height: 50px"></table>
-     <hr>
-     <hr>
-     <hr>
-     <table style="height: 50px"></table>
-
-
-     <!--- Special menu section-->
-     <section>
-        <table>
+  <body >
+    <div class="page">
+      <header>
+        <table class = header>
           <tr>
-            <td colspan="3" height= 50px></td><h2> SPECIAL MENU </h2></td>
-          </tr>
-          <tr style = "width: 100%">
-            <td class="special_menu">
-              <img class="special_menu" src="assets/beef_steak_img.png" alt="beef_steak_img">
-              <h3> BEEF STEAK </h3>
-              <h3> 12,000	&#8361; </h3>
-            </td>
-            <td class="special_menu">
-              <img class="special_menu" src="assets/exc_fish_img.png" alt="exc_fish_img">
-              <h3> EXCLUSIVE FISH </h3>
-              <h3> 15,000	&#8361;</h3>
-            </td>
-            <td class="special_menu">
-              <img class="special_menu" src="assets/fish_soup_img.png" alt="fish_soup_img">
-              <h3> FISH SOUP </h3>
-              <h3> 10,000	&#8361; </h3>
-            </td>
-          </tr>
+            <td> <img id="icon_pic" src = "assets/icon.png" > </td>
+            <td> <h2 id="login_text"> Login </h2> </td>
+          <tr>
         </table>
-
-        <!-- 3 lines -->
-        <hr>
-        <hr>
-        <hr>
-     </section>
-
-     <!--- Input (name, E-mail, message)-->
-     <section style = "margin-left:40%">
-        <form class="" action="" method="">
-          
-          <label for="name"><b> Name: </b></label><br>
-          <input type="text" id="name" name="name" size = "40" ><br><br>
-          <label for="email"><b> Email: </b></label><br>
-          <input type="text" id="email" name="email" size = "40"><br><br>
-          <label for="message"><b> Message: </b></label><br>
-          <textarea name="" id="message" cols="20" rows="5"></textarea><br>
-          <input type="submit" value="Send"><br>
-
-
-
-        </form>
-
+    
+      </header>
+  
+      <nav>
+            <h4><a href=""> HOME </a></h4>
+            <h4><a href=""> MENU </a></h4>
+            <h4><a href=""> GALLERY </a></h4>
+            <h4><a href=""> CONTACT </a></h4>
+      </nav>
+  
+      <!-- main -->
+      <div class = main>
+        <!-- welcome part (with order button)-->
+        <div class = welcome_order>
+            <img class = bg_main src="assets/bg_main.png">
+            <div class = bg_text>
+              <p> Welcome to <br>
+                  SKKU RESTAURANT </p>
+              <a href=""> ORDER </a>
+            </div>
+        </div>
         
-     </section>
+        <!-- welcome part (with article)-->
+        <div class = welcome_article>
+          <table>
+            <tr>
+              <td class = article_table1>
+                <img id="chef_pic" src = "assets/chef_img.png" alt ="chef" width="100%" >
+              </td>
+              <td class = article_table2>
+                <p class = article_head><i>Welcome to <br> SKKU RESTAURANT</i></p>
+                <p class = article_text>
+                  Over the next twelve months we will features, successively, <br>
+                  four menus - or 'volumes' - each of which presents some <br>
+                  of SKKU's unique dishes and the thinking behind them. <br> 
+                  By walking in SKKU footsteps, you will discover yourself <br>
+                  the story of the restaurant, with all its ground-breaking originality, <br>
+                  experimentation and innovation.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <!-- special offer-->
+        <div>
+          
+        </div>
+
+        <!-- special menu -->
+        <div>
+
+        </div>
+
+        <!-- contact us -->
+        <footer>
+        </footer>
+      </div>
+    </div>
+
   </body>
   
-  <!-- 3 lines -->
-  <hr>
-  <hr>
-  <hr>
+  
 
-  <footer>
-    <!--- CONTACT US : link with "CONTACT US at nav-->
-    <h3>CONTACT US</h3>
-    <h5>PHONE-NO: 010-0000-0000</h5>
-    <h5>YOUTUBE: <a href="#"> YOUTUBE CHANNEL </a></h5>
-    <h5>FACEBOOK: <a href="#"> FACEBOOK FANPAGE </a></h5>
-    <h5>INSTRAGRAM: <a href="#"> INSTRAGRAM FANPAGE </a></5>
-  </footer>
 </html>
