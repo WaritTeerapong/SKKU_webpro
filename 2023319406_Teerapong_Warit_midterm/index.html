@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SKKU ATM</title>
+</head>
+
+<body>
+    
+    <div class = "skku"><h2>SKKU ATM</h2></div>
+    <div class = "describe"><p>Insert your card or enter 16 digit account number</p></div>
+    
+    <div class="container">
+        
+        <div class="display" id="display">
+            <!--<input type="password" id="accountInput" readonly placeholder="Enter Account Number">-->
+        </div>
+        <div class="button-container">
+            <button onclick="appendToAcc(1)">1</button>
+            <button onclick="appendToAcc(2)">2</button>
+            <button onclick="appendToAcc(3)">3</button>
+            <button onclick="appendToAcc(4)">4</button>
+            <button onclick="appendToAcc(5)">5</button>
+            <button onclick="appendToAcc(6)">6</button>
+            <button onclick="appendToAcc(7)">7</button>
+            <button onclick="appendToAcc(8)">8</button>
+            <button onclick="appendToAcc(9)">9</button>
+            <button onclick="enterAcc()">ENT</button>
+            <button onclick="appendToAcc(0)">0</button>
+            <button onclick="deleteLastAcc()">DEL</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</html>
+
