@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="header">
+            <div class="progression-box">
+                <div class="question-number"> </div>
+                <div class="bar">
+                    <span class="progressbar s0"></span>
+                </div>
+            </div>
+
+            <div class="score-box">
+                score
+                <h1 id="score"> 0 </h1>
+            </div>
+        </div>
+
+        <div class="question-text" id="question">
+            <h1>*text*</h1>
+        </div>
+
+        <div class="choice-box">
+         
+            <button class="choice-0" onclick="choose(0)">
+                <div class="label">A</div>
+                <div class="option" id="0">A bra bra</div>
+            </button>
+            
+            <button class="choice-1" onclick="choose(1)">
+                <div class="label">B</div>
+                <div class="option" id="1">B bra bra</div>
+            </button>
+            
+            <button class="choice-2" onclick="choose(2)">
+                <div class="label">C</div>
+                <div class="option" id="2">C bra bra</div>
+            </button>
+            
+            <button class="choice-3" onclick="choose(3)">
+                <div class="label">D</div>
+                <div class="option" id="3">D bra bra</div>
+            </button>
+            
+        </div> 
+        
+    </div>
+    
+    <div class = "result-box hide">
+        <h1 id="total-score" onload="display_total_score()">Total Score: - </h1>
+        <button class= "play_again" id="play_btn" onclick="play_again()"> Play Again</button>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
