@@ -4,31 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">       <!-- link css file -->
+    <script src="./JS/jquery-3.7.1.min.js"></script>    <!-- link jqury library locally -->
 </head>
 <body>
+    <div class="header">
+
+        <button id="login_btn" class="login_btn active"> Login </button>
+        <button id="signup_btn" class="signup_btn"> Sign Up </button>
+
+    </div>
+
     <div class="container login">
-        <div class="header">
+        <div class="content login">
+            <div id="title">Login</div>
+            <div id="subtitle">Enter username and password:</div>
 
-            <button class="active" onclick="activate()"> Login </button>
-            <button class="deactive" onclick="deactivate()"> Sign Up </button>
+            <label for="login_email">Email</label>
+            <input type="email" name="login_email" id="login_email" placeholder="Email">
 
-        </div>
+            <label for="login_pswd">Password</label>
+            <input type="password" name="login_pswd" id="login_pswd" placeholder="Password">
 
-        <div class="content">
-
+            <input class="submit login" type="submit" value="Login">
         </div>
     </div>
 
-    
-    <div class="container signup hide">
-        <div class="header">
-            <button class="deactive"></button>
-            <button class="active"></button>
+    <div class="container signup">
+        <div class="content signup">
+            <div id="title">Sign up</div>
+            <div id="subtitle">Fill in the form:</div>
+            
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="First Name">
+                
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+            
+            <div class="radio">
+
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+
+            </div>
+            
+            <label for="e-mail">Email</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Email">
+
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd" id="pswd" placeholder="Password">
+
+            <label for="confirm_pwd">Confirm password</label>
+            <input type="password" name="confirm_pwd" id="confirm_pwd" placeholder="Confirm password">
+
+            <input class="submit signup" type="submit" value="Sign Up">
         </div>
+    </div>
 
+    <!-- if sign up succeed-->
+    <div class="container signup_success">
         <div class="content">
-
+            <div id="title">You are signed up.</div>
+        </div>
+    </div>
+    <!-- if login succeed-->
+    <div class="container login_success">
+        <div class="content">
+            <div id="title">You are logged in.</div>
         </div>
     </div>
 
